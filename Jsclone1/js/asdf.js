@@ -1,9 +1,19 @@
-const player = {
-    name: "nico",
-    points:10,
-    fat:true,   
+const calculator = {
+    add: function(a,b){
+        console.log(a+b);
+    },
+    minus: function(a,b){
+        console.log(a-b);
+    },
+    divide:function(a,b){
+        console.log(a/b);
+    },
+    multiple:function(a,b){
+        console.log(a**b);
+    }
 };
-player.points = player.points+15;
-console.log(player.points);
-player.points = player.points+15;
-console.log(player.points);
+
+calculator.add(2,3);
+calculator.minus(2,3);
+calculator.divide(6,3);
+calculator.multiple(2,3);
