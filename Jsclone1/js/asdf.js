@@ -1,8 +1,9 @@
-const a = [1,2,3,4,5];
-
-// get item from array 
-console.log(a);
-
-// and one more day to the array
-a.push()
-console.log(a);
+const player = {
+    name: "nico",
+    points:10,
+    fat:true,   
+};
+player.points = player.points+15;
+console.log(player.points);
+player.points = player.points+15;
+console.log(player.points);
