@@ -1,16 +1,13 @@
-const title = document.querySelector(".hello:first-child h1");
+const h1 = document.querySelector(".hello:first-child h1");
 
 function handleTitleClick(){
-    const ranColor = ["blue","red","green","yellow","black"];
-    let num = Math.floor(Math.random() * ranColor.length);
-    title.style.color = ranColor[num];
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor === "blue"){
+        newColor = "tomato";
+    } else{
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
 }
-function handleMouseEnte(){
-    title.innerText="Mouse is here~";
-}
-function handleMouseLeave(){
-    title.innerText="Mouse isn't here..";
-}
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnte);
-title.addEventListener("mouseleave", handleMouseLeave);
+h1.addEventListener("click", handleTitleClick);
